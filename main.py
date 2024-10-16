@@ -151,7 +151,7 @@ def handle_auction(message):
         sum_USD_sale += auction_KHARKOV_USD_SALE_rate
         count_USD_sale = count_USD_sale + 1
 
-    url_auction = 'https://minfin.com.ua/currency/auction/usd/buy/kharkov/'
+    url_auction = 'https://minfin.com.ua/currency/auction/eur/buy/kharkov/'
     response_auction = requests.get(url_auction)
 
     auction_KHARKOV_EUR_BUY_rate = (auction(response_auction, 0))
@@ -175,7 +175,7 @@ def handle_auction(message):
         sum_USD_sale += auction_ZAPOROZHYE_USD_SALE_rate
         count_USD_sale = count_USD_sale + 1
 
-    url_auction = 'https://minfin.com.ua/currency/auction/usd/buy/zaporozhye/'
+    url_auction = 'https://minfin.com.ua/currency/auction/eur/buy/zaporozhye/'
     response_auction = requests.get(url_auction)
 
     auction_ZAPOROZHYE_EUR_BUY_rate = (auction(response_auction, 0))
@@ -199,7 +199,7 @@ def handle_auction(message):
         sum_USD_sale += auction_CHERNIGOV_USD_SALE_rate
         count_USD_sale = count_USD_sale + 1
 
-    url_auction = 'https://minfin.com.ua/currency/auction/usd/buy/chernigov/'
+    url_auction = 'https://minfin.com.ua/currency/auction/eur/buy/chernigov/'
     response_auction = requests.get(url_auction)
 
     auction_CHERNIGOV_EUR_BUY_rate = (auction(response_auction, 0))
@@ -247,7 +247,7 @@ def handle_auction(message):
         sum_USD_sale += auction_VINNITSA_USD_SALE_rate
         count_USD_sale = count_USD_sale + 1
 
-    url_auction = 'https://minfin.com.ua/currency/auction/usd/buy/vinnitsa/'
+    url_auction = 'https://minfin.com.ua/currency/auction/eur/buy/vinnitsa/'
     response_auction = requests.get(url_auction)
 
     auction_VINNITSA_EUR_BUY_rate = (auction(response_auction, 0))
@@ -271,7 +271,7 @@ def handle_auction(message):
         sum_USD_sale += auction_DNEPROPETROVSK_USD_SALE_rate
         count_USD_sale = count_USD_sale + 1
 
-    url_auction = 'https://minfin.com.ua/currency/auction/usd/buy/dnepropetrovsk/'
+    url_auction = 'https://minfin.com.ua/currency/auction/eur/buy/dnepropetrovsk/'
     response_auction = requests.get(url_auction)
 
     auction_DNEPROPETROVSK_EUR_BUY_rate = (auction(response_auction, 0))
