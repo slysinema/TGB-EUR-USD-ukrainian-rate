@@ -40,15 +40,15 @@ def handle_nbu(message):
 
 @bot.message_handler(func=lambda message: message.text == 'Міжбанк')
 def handle_mizhbank(message):
-    # Обработка нажатия кнопки "Міжбанк"
 
+    # Обработка нажатия кнопки "Міжбанк"
     url_mizhbank = 'https://minfin.com.ua/ua/currency/mb/'
     response_mizhbank = requests.get(url_mizhbank)
 
-    mizhbank_USD_BUY_rate = "{:.3f}".format(mizhbank(response_mizhbank, 0))
-    mizhbank_USD_SALE_rate = "{:.3f}".format(mizhbank(response_mizhbank, 1))
-    mizhbank_EUR_BUY_rate = "{:.3f}".format(mizhbank(response_mizhbank, 2))
-    mizhbank_EUR_SALE_rate = "{:.3f}".format(mizhbank(response_mizhbank, 3))
+    mizhbank_USD_BUY_rate = "{:.2f}".format(mizhbank(response_mizhbank, 0))
+    mizhbank_USD_SALE_rate = "{:.2f}".format(mizhbank(response_mizhbank, 1))
+    mizhbank_EUR_BUY_rate = "{:.2f}".format(mizhbank(response_mizhbank, 2))
+    mizhbank_EUR_SALE_rate = "{:.2f}".format(mizhbank(response_mizhbank, 3))
 
     bot.send_message(message.chat.id, f"Курс Міжбанк\nUSD Купівля: {mizhbank_USD_BUY_rate} | Продаж: {mizhbank_USD_SALE_rate}\nEUR Купівля: {mizhbank_EUR_BUY_rate} | Продаж: {mizhbank_EUR_SALE_rate}")
 

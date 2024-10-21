@@ -25,7 +25,7 @@ def mizhbank(response, index):
         blocks = soup.find_all('div', class_='sc-1x32wa2-9 bKmKjX')
 
         # Используйте первый блок
-        result= blocks[index].text[:6]
+        result= blocks[index].text[:5]
         result_with_point = result.replace(',', '.')  # Заменяем запятую на точку
         result_float = float(result_with_point)  # Преобразуем в float
 
