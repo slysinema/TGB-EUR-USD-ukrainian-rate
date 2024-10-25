@@ -10,7 +10,7 @@ def nbu(response):
         string_out_web_site = soup.find('div', class_='sc-1x32wa2-9 fevpFL')
 
         if string_out_web_site:
-            result = string_out_web_site.text[:7]
+            result = string_out_web_site.text[:6]
             result_with_point = result.replace(',', '.')  # Заменяем запятую на точку
             result_float = float(result_with_point)  # Преобразуем в float
             return result_float
