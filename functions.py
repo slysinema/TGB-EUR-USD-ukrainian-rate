@@ -25,12 +25,11 @@ def mizhbank(response, index):
         blocks = soup.find_all('div', class_='sc-1x32wa2-9 bKmKjX')
 
         # Используйте первый блок
-        result= blocks[index].text[:5]
+        result= blocks[index].contents[0]   ##########Вот тут подумать!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         result_with_point = result.replace(',', '.')  # Заменяем запятую на точку
         result_float = float(result_with_point)  # Преобразуем в float
 
         return result_float
-
     else:
         print(f'Pages is not found. Error Code: {response.status_code}')
 

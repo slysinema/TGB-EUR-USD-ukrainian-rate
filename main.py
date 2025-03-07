@@ -7,7 +7,9 @@ from functions import nbu, mizhbank, auction
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-bot = telebot.TeleBot('6458256921:AAGAxdKyOpRxYdhNCoh4KevMRMw9CrEpQ3U')
+#your key
+bot = telebot.TeleBot(' ') 
+#
 
 @bot.message_handler(commands=['start'])
 def handle_start(message):
