@@ -34,9 +34,9 @@ Bot control is done **directly in the Telegram chat** via commands.
 ## ⚡ Функціонал / Features
 
 - `/start` — привітальне повідомлення та інструкції / welcome message and instructions  
-- `/kurs` — показує актуальні курси EUR/USD / shows current EUR/USD rates  
-- `/city <назва міста>` — курс у обраному місті / rates for a selected city  
-- Автоматичне оновлення курсів за розкладом (через cron / scheduler) / automatic rate updates on schedule  
+- `НБУ` — показує актуальні курси EUR/USD НБУ / shows current EUR/USD rates  
+- `Міжбанк` — показує актуальні курси EUR/USD Міжбанк / rates for a selected city
+- `Аукціон` — показує актуальні курси EUR/USD Міста України
 - Всі дії виконуються через Telegram-чат / all actions are done via Telegram chat  
 
 ---
