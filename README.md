@@ -34,9 +34,9 @@ Bot control is done **directly in the Telegram chat** via commands.
 ## ⚡ Функціонал / Features
 
 - `/start` — привітальне повідомлення та інструкції / welcome message and instructions  
-- `НБУ` — показує актуальні курси EUR/USD НБУ / shows current EUR/USD rates  
-- `Міжбанк` — показує актуальні курси EUR/USD Міжбанк / rates for a selected city
-- `Аукціон` — показує актуальні курси EUR/USD Міста України
+- `НБУ` — показує актуальні курси EUR/USD НБУ / shows current EUR/USD NBU rates
+- `Міжбанк` — показує актуальні курси EUR/USD Міжбанк / shows current EUR/USD Interbank rates
+- `Аукціон` — показує актуальні курси EUR/USD Міста України / shows current EUR/USD rates Cities of Ukraine
 - Всі дії виконуються через Telegram-чат / all actions are done via Telegram chat  
 
 ---
@@ -51,7 +51,7 @@ git clone https://github.com/slysinema/TGB-EUR-USD-ukrainian-rate.git
 ```bash
 pip install -r requirements.txt
 ```
-3. Додати токен Telegram бота у файл config.py / add your Telegram bot token to config.py:
+3. Додати токен Telegram бота у файл main.py / add your Telegram bot token to main.py:
 ```
 TELEGRAM_TOKEN = "YOUR_TOKEN_HERE"
 ```
@@ -68,14 +68,10 @@ python bot.py
 ## 📸 Скріншоти / Screenshots
 
 *Приклад взаємодії користувача з Telegram ботом.*  
+*Example of user interaction with Telegram bot.*  
 ![Скріншот роботи бота](images/Аукціон.png)  
 ![Скріншот роботи бота](images/НБУ_Міжбанк.png)  
 
 
-<br>
-
-*Example of user interaction with Telegram bot.*  
-![Bot chat screenshot](images/Аукціон.png)  
-![Bot chat screenshot](images/НБУ_Міжбанк.png)  
 
 
