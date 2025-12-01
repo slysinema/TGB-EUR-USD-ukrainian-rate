@@ -59,7 +59,7 @@ TELEGRAM_TOKEN = "YOUR_TOKEN_HERE"
 ```
 python bot.py
 ```
-##📌 Можливості для розвитку / Potential improvements
+## 📌 Можливості для розвитку / Potential improvements
 
 - Додавання курсу інших валют / Adding more currencies
 - Додавання графіків змін курсів / Adding currency trend charts
