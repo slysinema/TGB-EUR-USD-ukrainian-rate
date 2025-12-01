@@ -59,8 +59,23 @@ TELEGRAM_TOKEN = "YOUR_TOKEN_HERE"
 ```
 python bot.py
 ```
-#📌 Можливості для розвитку / Potential improvements
+##📌 Можливості для розвитку / Potential improvements
 
 - Додавання курсу інших валют / Adding more currencies
 - Додавання графіків змін курсів / Adding currency trend charts
 - Інтеграція з push-сповіщеннями / Integration with push notifications
+
+## 📸 Скріншоти / Screenshots
+
+*Приклад взаємодії користувача з Telegram ботом.*  
+![Скріншот роботи бота](images/Аукціон.png)  
+![Скріншот роботи бота](images/НБУ_Міжбанк.png)  
+
+
+<br>
+
+*Example of user interaction with Telegram bot.*  
+![Bot chat screenshot](images/Аукціон.png)  
+![Bot chat screenshot](images/НБУ_Міжбанк.png)  
+
+
